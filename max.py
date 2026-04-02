@@ -1,10 +1,9 @@
-a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
-c = float(input("Enter third number: "))
+num = int(input("Enter a number: "))
+fact = 1
 
-if a >= b and a >= c:
-    print("Greatest number is:", a)
-elif b >= a and b >= c:
-    print("Greatest number is:", b)
+if num < 0:
+    print("Factorial not defined for negative numbers")
 else:
-    print("Greatest number is:", c)
+    for i in range(1, num + 1):
+        fact *= i
+    print("Factorial of", num, "is:", fact)
