@@ -10,7 +10,7 @@ pipeline {
 
         stage('Run Python Code') {
             steps {
-                sh 'python max.py'
+                bat 'python max.py'
             }
         }
 
